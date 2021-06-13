@@ -1,0 +1,156 @@
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+   background: #B8501F;
+    background: -webkit-linear-gradient(top left, #B8501F, #4F0C57);
+    background: -moz-linear-gradient(top left, #B8501F, #4F0C57);
+    background: linear-gradient(to bottom right, #B8501F, #4F0C57);
+}
+main
+{
+    display:flex;
+    width:60%;
+    height:80vh;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 3rem 5rem rgb(0,0,0,0.4);
+}
+main section{
+    flex:1;
+    background-color:white ;
+    opacity:0.3;
+}
+.player--active
+{
+    opacity:0.6
+}
+.hidden
+{
+    display: none;
+}
+.player-info
+{
+    padding:8rem 6rem;
+    text-align: center;
+    font-size: 2.5rem;;
+}
+.total-score
+{
+    padding:2rem;
+    font-size: 6rem;;
+    color: #B8501F
+}
+.score
+{
+    padding-bottom:3rem;
+    font-size: 4rem;;
+}
+.display-score
+{
+    padding:2rem 0rem;
+    padding-bottom: 0rem;
+    background-color: #B8501F;
+    width:200px;
+    font-size: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color:white;
+    margin:40px auto;
+}
+.display-score p
+{
+    padding: 1rem 0;;
+}
+.btn,.dice
+{
+    position: absolute;
+    width:fit-content;
+    padding:1rem 2rem;
+    font-size: 2rem;
+    text-transform:uppercase;
+    top:8%;
+    border: none;
+    opacity: 0.8;
+    border-radius: 2rem;
+    right:42%;
+    cursor:pointer;
+    box-shadow: 0px 1rem 4rem rgb(0,0,0,0.4);
+}
+.dice
+{
+    width:100px;
+    padding:0;
+    border-radius:0;
+    top:30%;
+    right:45%;
+    opacity:1;
+}
+.player-winner
+{
+    background-color: #2f2f2f;
+    opacity:1;
+}
+.hold
+{
+    top:84%;
+    right:45%;
+  
+
+}
+.roll-dice
+{
+    top:74%;
+
+}
+
+@media screen and (max-width:850px) 
+{
+    main
+    {
+        flex-direction: column;
+        width:100%;
+
+    }
+    main section
+    {
+        height:50%;
+        display: flex;;
+    }
+    .btn
+    {
+        top:268px;
+    }
+    .hold
+    {
+        right:10px;
+    }
+    .roll-dice
+    {
+        right:160px;
+    }
+    .new-game
+    {
+        left:10px;
+    }
+    .dice
+    {
+        position: fixed;
+        top:45%;
+        left:20px;
+    }
+}
